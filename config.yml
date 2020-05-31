@@ -1,0 +1,16 @@
+title: Biometrico
+description: 'Antes de Modificar, no me funciona en java web, voy a trabajar en nativo.'
+template:
+  repo: biometrico-template
+  name: biometrico
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
